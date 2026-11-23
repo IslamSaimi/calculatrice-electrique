@@ -1,6 +1,6 @@
-# Calculatrice électrique (C++)
+# Calculatrice électrique (C)
 
-Programme en console écrit en **C++** pour résoudre rapidement des exercices
+Programme en console écrit en **langage C** pour résoudre rapidement des exercices
 d'**électricité** vus en cours (Électricité et magnétisme, Électrotechnique
 fondamentale) et vérifier mes résultats de TD.
 
@@ -21,11 +21,11 @@ nombre, le programme redemande la valeur.
 ## Compiler et lancer
 
 ```bash
-g++ main.cpp -o calculatrice
+gcc main.c -o calculatrice
 ./calculatrice
 ```
 
-(Sous Windows : `g++ main.cpp -o calculatrice.exe` puis `calculatrice.exe`)
+(Sous Windows : `gcc main.c -o calculatrice.exe` puis `calculatrice.exe`, ou ouvrir `main.c` dans Code::Blocks / VS Code)
 
 ## Exemple
 
@@ -36,8 +36,15 @@ Votre choix : 3
 Nombre de resistances : 2
   R1 (ohms) : 100
   R2 (ohms) : 100
-=> Req = 50 ohms
+=> Req = 50.000 ohms
 ```
+
+## Notions de C utilisées
+
+- Entrées / sorties avec `printf` et `scanf` (`%d`, `%lf`, `%.3f`)
+- Fonctions, boucle `do...while` et `switch`
+- Tableaux (`double r[20]`) pour stocker les résistances
+- Vérification des saisies (valeur de retour de `scanf`)
 
 ## Formules utilisées
 
